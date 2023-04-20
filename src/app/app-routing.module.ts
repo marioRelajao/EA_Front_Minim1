@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes, CanActivate } from '@angular/router';
-
+import { LogsComponent } from './components/log/logs/logs.component';
 import { UsuariosComponent } from './components/user/usuarios/usuarios.component';
 import { ChallengesComponent } from './components/challenge/challenges/challenges.component';
 import { MapaComponent } from './components/map/mapa/mapa.component';
@@ -21,6 +21,11 @@ const routes: Routes = [
   {
     path: 'mapa',
     component: MapaComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'logs',
+    component: LogsComponent,
     canActivate: [AuthGuard]
   },
   {

@@ -21,5 +21,12 @@ export class SharedDataService {
   editClickedUser = new Subject<boolean>();
 
   user: any = null;
+
+    //--------------LOG SHARED DATA-----------------
+  logAdded = new Subject<boolean>();
+
+  editClickedLog = new Subject<boolean>();
+
+  log: any = null;
 }
 

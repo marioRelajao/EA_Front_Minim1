@@ -29,6 +29,10 @@ import { ModifyuserComponent } from './components/user/modifyuser/modifyuser.com
 import { LoginComponent } from './components/login/login.component';
 import { AuthService } from './components/auth/auth.service';
 import { AuthGuardService } from './components/auth/auth-guard.service';
+import { ModifyLogComponent } from './components/log/modify-log/modify-log.component';
+import { FromLogsComponent } from './components/log/from-logs/from-logs.component';
+import { ListLogsComponent } from './components/log/list-logs/list-logs.component';
+import { LogsComponent } from './components/log/logs/logs.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +49,10 @@ import { AuthGuardService } from './components/auth/auth-guard.service';
     ListuserComponent,
     ModifyuserComponent,
     LoginComponent,
+    ModifyLogComponent,
+    FromLogsComponent,
+    ListLogsComponent,
+    LogsComponent,
   ],
   imports: [
     BrowserModule,

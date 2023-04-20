@@ -1,0 +1,44 @@
+<div class="col-sm-8">
+    <!-- <h2>Update Data:</h2> -->
+    <form class="form-horizontal">
+      <div class="form-group">
+          <label for="lastLogin" class="control-label col-sm-2">
+            <!-- LastLogin -->
+          </label>
+          <div class="col-sm-10">
+            <input 
+              type="text" 
+              class="form-control" 
+              id="lastLogin" 
+              name="lastLogin" [(ngModel)]="model.lastLogin"
+              placeholder="Enter the last login">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="timeOnline" class="control-label col-sm-2">
+            <!-- Surname -->
+          </label>
+          <div class="col-sm-10">
+            <input 
+              type="number" 
+              class="form-control" 
+              id="timeOnline" 
+              name="timeOnline" [(ngModel)]="model.timeOnline" 
+              placeholder="Time Online">
+          </div>
+        </div>
+        
+        <br>
+        <div class="form-group">
+          <div class="col-sm-10 col-sm-offset-2">
+            <button
+              type="submit"
+              class="btn btn-success"
+              (click)="editarLog(model._id)"
+            >
+            Save
+            </button>
+          </div>
+      </div>
+    </form>
+  </div>
